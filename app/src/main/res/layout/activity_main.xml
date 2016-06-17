@@ -24,7 +24,7 @@
             android:layout_height="wrap_content" />
 
         <TextView
-            style="@style/MiEstilo.titulo"
+            style="@style/MiEstiloTitulo"
             android:layout_gravity="center_horizontal"
             android:text="@string/edtTituloPrincipal"
             android:layout_width="wrap_content"
@@ -43,7 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <Button
-            style="@style/MiEstilo.boton"
+            style="@style/MiEstiloBoton"
             android:textAllCaps="false"
             android:text="@string/btnIngresar"
             android:id="@+id/activity_main_btnIngresar"

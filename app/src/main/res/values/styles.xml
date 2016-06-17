@@ -7,15 +7,17 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-    <style name="MiEstilo.titulo">
+    <style name="MiEstiloTitulo"
+        parent="@android:style/TextAppearance.Medium">
         <item name="android:textSize">16pt</item>
-        <item name="android:textStyle">"bold"</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:typeface">monospace</item>
         <item name="android:textColor">#070542</item>
     </style>
-    <style name="MiEstilo.boton">
+    <style name="MiEstiloBoton"
+        parent="@android:style/TextAppearance.Medium">
         <item name="android:textSize">10pt</item>
-        <item name="android:textStyle">"bold"</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:typeface">monospace</item>
         <item name="android:textColor">#070542</item>
     </style>
