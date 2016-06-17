@@ -7,10 +7,45 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="mx.com.serviciosinformaticosintegrales.ejercicio1.MainActivity">
+    tools:context="mx.com.serviciosinformaticosintegrales.ejercicio1.MainActivity"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/MiEstilo.titulo"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/edtTituloPrincipal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!--hint pone una especie de marca de agua-->
+        <EditText
+            android:id="@+id/activity_main_edtUsuario"
+            android:hint="@string/edtUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!--inputType cuadro de texto de contraseña -->
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/activity_main_edtContraseña"
+            android:hint="@string/edtContraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            style="@style/MiEstilo.boton"
+            android:textAllCaps="false"
+            android:text="@string/btnIngresar"
+            android:id="@+id/activity_main_btnIngresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+
+
 </RelativeLayout>

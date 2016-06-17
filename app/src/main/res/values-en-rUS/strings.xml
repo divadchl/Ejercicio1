@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Exercise1</string>
+    <string name="edtUsuario">User</string>
+    <string name="edtContraseña">Password</string>
+    <string name="btnIngresar">Sign In</string>
+    <string name="edtTituloPrincipal">Sign Up</string>
+</resources>
