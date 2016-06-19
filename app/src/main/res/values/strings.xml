@@ -7,4 +7,5 @@
     <string name="btnFragmento1">Fragmento 1</string>
     <string name="btnFragmento2">Fragmento 2</string>
     <string name="saludo" formatted="false">Hola %s bievenido</string>
+    <string name="btnAgregar">Agregar</string>
 </resources>
