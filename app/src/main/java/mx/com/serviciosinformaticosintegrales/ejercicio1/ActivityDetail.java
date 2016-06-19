@@ -47,4 +47,11 @@ public class ActivityDetail extends AppCompatActivity implements View.OnClickLis
         getFragmentManager().beginTransaction().replace(R.id.fragmentHolder,new FragmentoLista()).commit();
 
     }
+
+    public void pasarDatos()
+    {
+        return;
+    }
+
+
 }

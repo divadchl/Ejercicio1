@@ -2,6 +2,7 @@ package mx.com.serviciosinformaticosintegrales.ejercicio1.fragmento;
 
 import android.app.Fragment;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
@@ -14,6 +15,9 @@ import android.widget.ListView;
 import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
+
+import mx.com.serviciosinformaticosintegrales.ejercicio1.ActivityDetail;
+import mx.com.serviciosinformaticosintegrales.ejercicio1.ActivityResumen;
 import mx.com.serviciosinformaticosintegrales.ejercicio1.adapters.AdapterItemList;
 import mx.com.serviciosinformaticosintegrales.ejercicio1.model.ModelItem;
 import mx.com.serviciosinformaticosintegrales.ejercicio1.R;
@@ -40,6 +44,11 @@ public class FragmentoLista extends Fragment {
                 ModelItem modelItem =adapter.getItem(position);
                 ModelItem modelItem2 = array.get(position);
                 Toast.makeText(getActivity(),modelItem2.strItem,Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(), ActivityResumen.class);
+                intent.putExtra("usuario", modelItem2.strItem);
+                intent.putExtra("recurso", modelItem2.intResourceId);
+                intent.putExtra("descripcion", modelItem2.strId);
+                startActivity(intent);
             }
         });
 
@@ -64,6 +73,8 @@ public class FragmentoLista extends Fragment {
 
             }
         });
+
+
         return view;
     }
 
